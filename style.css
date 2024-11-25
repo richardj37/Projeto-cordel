@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+    font-family: "Cordel";
+    src: url(fontes/xilosa_.ttf);
+}
+:root{
+    --color:#F8AFB6;
+    --color2:black;
+    --color3:white;
+    --font1: "Cordel", cursive;
+    --font2: Verdana, Geneva, Tahoma, sans-serif;
+}
+html, body{
+    min-height: 100vh;
+    background-color: var(--color);
+    font-family: var(--font1);
+}
+
+header{
+    background-color: var(--color);
+    color: var(--color2);
+    text-align: center;
+    border: 10px solid var(--color2);
+    border-bottom: 0px;
+}
+header>h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 4em;
+}
+
+header>p{
+    padding-bottom: 50px;
+}
+
+header p a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--color2);
+}
+a{
+    color: var(--color3);
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    font-size: 6vw;
+}
+
+section>p{
+    padding-bottom: 1em;
+}
+
+section.normal{
+    background-color: var(--color);
+    color: var(--color2);
+    border: 10px solid var(--color2);
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.568);
+    color: whitesmoke;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.678);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+section.imagem#imagem1{
+    background-image: url(imagens/background001.jpg);
+    
+}
+
+section.imagem#imagem2{
+    background-image: url(imagens/background002.jpg);
+   
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.486);
+    display: inline-block;
+    padding-left: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+footer{
+    background-color: var(--color2);
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--color3);
+    padding: 15px;
+    padding-top: 0px;
+    font-family: var(--font2);
+}
